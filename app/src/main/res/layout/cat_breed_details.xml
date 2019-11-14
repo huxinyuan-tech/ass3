@@ -1,0 +1,218 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.unsw.infs3634.ass3.CatBreedDetailsActivity">
+
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/breedName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:gravity="center" />
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/breedName"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:id="@+id/labelDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/description_title"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/labelDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:id="@+id/description"
+        android:scrollHorizontally="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/description"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:id="@+id/labelTemperament"
+        android:scrollHorizontally="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/temperament"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/labelTemperament"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/temperament"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp" />
+
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/temperament"
+        android:id="@+id/originTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="@string/origin" />
+
+
+    <TextView
+        app:layout_constraintStart_toEndOf="@+id/originTitle"
+        app:layout_constraintTop_toBottomOf="@+id/temperament"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:id="@+id/origin"
+        android:scrollHorizontally="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/originTitle"
+        android:id="@+id/lifeSpanTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="@string/life_span" />
+
+
+    <TextView
+        app:layout_constraintStart_toEndOf="@+id/lifeSpanTitle"
+        app:layout_constraintTop_toBottomOf="@+id/origin"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:id="@+id/lifeSpan"
+        android:scrollHorizontally="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lifeSpanTitle"
+        android:id="@+id/friendlinessToDogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="@string/friendliness_to_dog" />
+
+
+    <TextView
+        app:layout_constraintStart_toEndOf="@+id/friendlinessToDogTitle"
+        app:layout_constraintTop_toBottomOf="@+id/lifeSpan"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:id="@+id/friendlinessToDog"
+        android:scrollHorizontally="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/friendlinessToDogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/weight"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:id="@+id/weightTitle" />
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/weightTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/imperialTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:text="@string/imperial"/>
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/weightTitle"
+        app:layout_constraintStart_toEndOf="@+id/imperialTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:id="@+id/imperial" />
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/imperialTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:id="@+id/metricTitle"
+        android:text="@string/metric" />
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/imperialTitle"
+        app:layout_constraintStart_toEndOf="@+id/metricTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/metric"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp" />
+
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/metricTitle"
+        android:id="@+id/wikiLinkTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="@string/wiki_link" />
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/wikiLinkTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:id="@+id/wikiLink"
+        android:scrollHorizontally="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addToFavButton"
+        android:text="@string/add_to_favourite" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

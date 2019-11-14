@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ass3</string>
+    <string name="search_for_cat_breed">Search for cat breed</string>
+    <string name="search">Search</string>
+    <string name="starred">Starred</string>
+    <string name="description_title">Description:</string>
+    <string name="origin">Origin:</string>
+    <string name="temperament">Temperament:</string>
+    <string name="life_span">Life Span:</string>
+    <string name="friendliness_to_dog">Friendliness to dog:</string>
+    <string name="wiki_link">Wiki Link:</string>
+    <string name="weight">Weight:</string>
+    <string name="imperial">Imperial:</string>
+    <string name="metric">Metric:</string>
+    <string name="star_icon">star icon</string>
+    <string name="add_to_favourite">Add to favourite</string>
+</resources>
