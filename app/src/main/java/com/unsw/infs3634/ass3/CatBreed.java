@@ -8,6 +8,7 @@ import java.io.Serializable;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class CatBreed implements Serializable  {
 
+    private String id;
     private String name;
     private Weight weight;
     private String description;
@@ -17,7 +18,8 @@ public class CatBreed implements Serializable  {
     private String wikiLink;
     private String dogFriendlinessLevel;
 
-    public CatBreed(@JsonProperty("name") String name,
+    public CatBreed(@JsonProperty("id") String id,
+                    @JsonProperty("name") String name,
                     @JsonProperty("weight") Weight weight,
                     @JsonProperty("description") String description,
                     @JsonProperty("temperament") String temperament,
@@ -25,6 +27,7 @@ public class CatBreed implements Serializable  {
                     @JsonProperty("life_span") String lifeSpan,
                     @JsonProperty("wikipedia_url") String wikiLink,
                     @JsonProperty("dog_friendly") String dogFriendlinessLevel) {
+        this.id = id;
         this.name = name;
         this.description = description;
         this.weight = weight;
@@ -33,6 +36,10 @@ public class CatBreed implements Serializable  {
         this.lifeSpan = lifeSpan;
         this.wikiLink = wikiLink;
         this.dogFriendlinessLevel = dogFriendlinessLevel;
+    }
+
+    public String getId() {
+        return id;
     }
 
     public String getName() {
